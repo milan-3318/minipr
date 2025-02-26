@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | prototype</title>
+    <link rel="stylesheet" href="dashboardstyle.css">
+    <script src="https://kit.fontawesome.com/c89cf993f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>prototype</h2>
+            <ul>
+                <li><a href="#" class="active"><i class="fa-solid fa-home"></i> Home</a></li>
+                <li><a href="/temp/chat/chat.html"><i class="fa-solid fa-list"></i> Quick Chat</a></li>
+                <li><a href="https://www.wikipedia.org/"><i class="fa-solid fa-book"></i> Resources</a></li>
+                <li><a href="/temp/first/index.html" id="logoutBtn"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+
+        <div class="dashboard-content">
+            <header>
+                <h1>Welcome, <span id="studentName">Student</span>!</h1>
+                <p>Your personal learning and mentorship hub.</p>
+            </header>
+
+            <div class="card-container">
+                <div class="card" onclick="location.href='/temp/chat/chat.html'">
+                    <i class="fa-solid fa-pen"></i>
+                    <h3>Ask a Mentor</h3>
+                    <p>Submit your academic or career-related queries.</p>
+                </div>
+
+                <div class="card" onclick="location.href='https://www.wikipedia.org/'">
+                    <i class="fa-solid fa-book"></i>
+                    <h3>Resources</h3>
+                    <p>Explore expert guides, notes, and learning material.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="student-dashboard.js"></script>
+</body>
+
+</html>

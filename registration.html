@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c89cf993f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Complete Your Profile</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="fullName" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-calendar"></i>
+                        <input type="number" id="age" placeholder="Age" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-venus-mars"></i>
+                        <select id="gender">
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-face-smile"></i>
+                        <select id="specialty">
+                            <option value="" disabled selected>Select Specialty</option>
+                            <option value="career counseling">Career Counseling</option>
+                            <option value="psychological expert">Psychological Expert</option>
+                            <option value="specific-field">Expert in Specific Field</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field" id="specificFieldInput" style="display: none;">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <input type="text" id="specificField" placeholder="Enter your field of expertise">
+                    </div>
+                </div>
+
+                <div class="btn-field">
+                    <button type="button" id="submitBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="registration.js"></script>
+
+</body>
+</html>

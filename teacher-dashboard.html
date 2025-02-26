@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard | Prototype</title>
+    <link rel="stylesheet" href="teacher-dashboard.css">
+    <script src="https://kit.fontawesome.com/c89cf993f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Prototype</h2>
+            <ul>
+                <li><a href="#" class="active"><i class="fa-solid fa-home"></i> Home</a></li>
+                <li><a href="/temp/chat/chat.html"><i class="fa-solid fa-comments"></i> Quick chat</a></li>
+                <li><a href="https://www.wikipedia.org/"><i class="fa-solid fa-book"></i> Resources</a></li>
+                <li><a href="/temp/first/index.html" id="logoutBtn"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+
+        <div class="dashboard-content">
+            <header>
+                <h1>Welcome, <span id="teacherName">Teacher</span>!</h1>
+                <p>Guide and mentor students with your expertise.</p>
+            </header>
+
+            <div class="card-container">
+                <div class="card" onclick="location.href='/temp/chat/chat.html'">
+                    <i class="fa-solid fa-comments"></i>
+                    <h3>Quick chat</h3>
+                    <p>Respond to student queries and provide guidance.</p>
+                </div>
+
+                <div class="card" onclick="location.href='https://www.wikipedia.org/'">
+                    <i class="fa-solid fa-book"></i>
+                    <h3>Resources</h3>
+                    <p>Access useful teaching and reference materials.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="teacher-dashboard.js"></script>
+</body>
+
+</html>
