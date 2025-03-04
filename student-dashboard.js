@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Simulate student name (replace with real data from session)
+    // replace with real data from session
     const studentName = localStorage.getItem("studentName") || "Student";
     document.getElementById("studentName").textContent = studentName;
 
